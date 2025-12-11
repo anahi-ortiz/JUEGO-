@@ -1,0 +1,55 @@
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente el contenedor principal */
+  align-items: center;
+  height: 100vh;
+  background-color: #2c3e50; /* Fondo oscuro */
+  color: #ecf0f1;
+}
+
+/* Contenedor que agrupa el Canvas y el Panel de Información */
+.game-container {
+  display: flex;
+  gap: 30px; /* Espacio entre el Canvas y el panel lateral */
+  justify-content: center;
+  align-items: flex-start; /* Alinea los elementos a la parte superior */
+  padding: 20px;
+  background-color: #34495e; /* Fondo del área de juego */
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+canvas {
+  /* El tamaño se define en app.js (300x600) */
+  border: 4px solid #f1c40f; /* Borde visible */
+  background-color: #000000; /* Fondo del Canvas */
+  display: block;
+}
+
+/* Estilos para el panel lateral de información */
+#info-panel {
+  width: 150px;
+  padding: 15px;
+  background-color: #34495e;
+  border-left: 2px solid #555;
+}
+
+#info-panel h2 {
+  margin-top: 0;
+  color: #f1c40f;
+  border-bottom: 1px solid #555;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+#info-panel p {
+  font-size: 1.2em;
+  margin: 15px 0;
+}
+
+#info-panel span {
+    font-weight: bold;
+    color: #e74c3c;
+}

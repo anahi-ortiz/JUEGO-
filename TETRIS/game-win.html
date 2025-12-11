@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Victoria</title>
+
+<style>
+    /* 1. Importación de Fuente Pixelada (si no está globalmente) */
+    @font-face {
+        font-family: 'Pixelify Sans';
+        src: url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@700&display=swap') format('woff2');
+    }
+
+    /* 2. Estilos Globales y Fondo Oscuro Retro */
+    body {
+        /* Fondo azul oscuro/gris oscuro, similar a los cartuchos de NES o Game Boy */
+        background-color: #263238; 
+        color: #ecf0f1;
+        font-family: 'Pixelify Sans', 'Courier New', monospace;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* 3. Título de VICTORIA (Énfasis en Verde/Neon) */
+    h1 {
+        font-family: 'Pixelify Sans', 'Courier New', monospace;
+        font-size: 80px;
+        margin: 0;
+        letter-spacing: 15px;
+        color: #00ff6a; /* Verde Neon para la victoria */
+        text-shadow: 
+            -4px -4px 0 #000,
+            4px -4px 0 #000,
+            -4px 4px 0 #000,
+            4px 4px 0 #000,
+            0 0 20px #00ff6a; /* Efecto de brillo retro/neón */
+        animation: brillo 1s infinite alternate;
+    }
+
+    /* 4. Mensaje Secundario */
+    p {
+        font-size: 24px;
+        margin-top: 20px;
+        color: #b0bec5;
+    }
+
+    /* 5. Animación de Brillo (para el título) */
+    @keyframes brillo {
+        0% { text-shadow: 
+            -4px -4px 0 #000, 4px -4px 0 #000, -4px 4px 0 #000, 4px 4px 0 #000, 
+            0 0 5px #00ff6a; 
+        }
+        100% { text-shadow: 
+            -4px -4px 0 #000, 4px -4px 0 #000, -4px 4px 0 #000, 4px 4px 0 #000, 
+            0 0 30px #00ff6a; 
+        }
+    }
+
+    /* 6. Botón de Reintentar (Estilo de Bloque Retro) */
+    .btn {
+        background-color: #00ff6a; /* Verde brillante del tema de victoria */
+        color: #263238; /* Texto oscuro */
+        padding: 15px 40px;
+        margin-top: 40px;
+        font-size: 30px;
+        border: 4px solid #00b34d; /* Borde más oscuro */
+        box-shadow: 0 8px 0 #00b34d; /* Efecto 3D de botón presionado */
+        cursor: pointer;
+        text-decoration: none;
+        transition: all 0.1s ease;
+        display: inline-block;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    .btn:hover {
+        background-color: #00b34d;
+        box-shadow: 0 4px 0 #008037;
+        transform: translateY(4px);
+    }
+</style>
+</head>
+<body>
+    <h1>¡VICTORIA!</h1>
+    <p>Has limpiado el tablero y alcanzado la puntuación máxima.</p>
+    <a href="index.html" class="btn">Volver a Jugar</a>
+</body>

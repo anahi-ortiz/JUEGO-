@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tetris Game</title>
+  <link rel="stylesheet" href="CSS/estilos.css" /> 
+</head>
+<body>
+  <div class="game-container">
+      <main class="canvas-area">
+          <div class="canvas-wrapper">
+              <canvas id="gameCanvas"></canvas>
+          </div>
+      </main>
+
+      <div id="info-panel">
+          <h2>📊 Info</h2>
+          <p>Nivel: <span id="level-display">1</span></p>
+          <p>Puntuación: <span id="score">0</span></p>
+      </div>
+  </div>
+
+  <script src="JS/matrix.js"></script>
+  <script src="JS/main.js"></script>
+  <script src="JS/app.js"></script>
+</body>
+</html>

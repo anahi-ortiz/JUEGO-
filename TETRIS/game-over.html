@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Game Over</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: black;
+        color: red;
+        font-family: "Courier New", monospace;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-shadow: 0 0 12px red;
+    }
+
+    h1 {
+        font-size: 70px;
+        margin: 0;
+        animation: parpadeo 1s infinite alternate;
+        letter-spacing: 4px;
+    }
+
+    p {
+        font-size: 22px;
+        margin-top: 10px;
+        opacity: 0.8;
+    }
+
+    @keyframes parpadeo {
+        0% { opacity: 1; }
+        100% { opacity: 0.3; }
+    }
+
+    .btn {
+        margin-top: 40px;
+        padding: 15px 40px;
+        background: transparent;
+        border: 2px solid red;
+        color: red;
+        text-transform: uppercase;
+        font-size: 20px;
+        cursor: pointer;
+        text-shadow: 0 0 8px red;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background: red;
+        color: black;
+        box-shadow: 0 0 20px red;
+    }
+</style>
+</head>
+<body>
+
+<h1>GAME OVER</h1>
+<p>El destino te falló esta vez...</p>
+
+<a href="index.html"><button class="btn">Intentar de nuevo</button></a>
+
+</body>
+</html>
+
+        padding: 15px 40px;
