@@ -312,4 +312,5 @@ class Matrix {
 
 ```
 ### Repositorio del juego
-![Texto del Enlace](https://github.com/anahi-ortiz/JUEGO-/tree/main/TETRIX)
+![Repositorio](https://github.com/anahi-ortiz/JUEGO-/tree/main/TETRIX)
+
