@@ -309,4 +309,7 @@ class Matrix {
     return this.isValidPosition(row, col) ? this.data[row][col] : null;
   }
 }
+
 ```
+### Repositorio del juego
+![Texto del Enlace](https://github.com/anahi-ortiz/JUEGO-/tree/main/TETRIX)
